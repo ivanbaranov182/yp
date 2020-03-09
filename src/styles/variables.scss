@@ -1,0 +1,23 @@
+// @import '~vuetify/src/styles/styles.sass';
+
+@import '~vuetify/src/styles/settings/variables';
+$grid-breakpoints: map-merge(
+	(
+		'xs': 0,
+		'sm': 420px,
+		'md': 560px,
+		'lg': 780px,
+		'xl': 1000px
+	),
+	$grid-breakpoints
+) !default;
+
+$container-max-widths: map-merge(
+	$container-max-widths,
+	(
+		// 'sm': 420px,
+			'md': 560px,
+		'lg': 780px,
+		'xl': 1000px
+	)
+);
